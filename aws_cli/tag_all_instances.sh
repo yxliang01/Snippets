@@ -19,7 +19,7 @@ echo 'Reponse from AWS:'
 IFS=' ' aws ec2 create-tags --tags Key="$1",Value="$2" --resources ${ids[@]}
 
 if which dline > /dev/null ; then
-	dline wave 140
+	dline wave 100
 fi
 # shellcheck disable=SC2181
 if [[ $? -eq 0 ]]; then
